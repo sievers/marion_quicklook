@@ -15,7 +15,7 @@ if __name__=='__main__':
     parser.add_argument('dir',help='Directory containing data.')
     parser.add_argument('-p','--pols',default='0 1 2 3',help='Polarizations to look at (quote it you want more than one, e.g. --pols "1 2")')
     parser.add_argument('-F','--numax',type=float,default=125.0,help='Maximum frequency in the data')
-    parser.add_argument('-O','--outdir',default='./',help='Directory to place plots in')
+    parser.add_argument('-o','--outdir',default='./',help='Directory to place plots in')
     parser.add_argument('-D','--makedir',action='count',default=0,help='Make the output directory if it doesn\'t exist')
     parser.add_argument('-C','--add_ctime',action='count',default=0,help='Make the output directory if it doesn\'t exist')
     parser.add_argument('-v','--vmin',type=float,default=4.5,help='Minimum amplitude in colorscale')
