@@ -76,6 +76,7 @@ if __name__=='__main__':
         plt.colorbar()
         plt.axis('auto')
         plt.axis('tight')
+        plt.title('Amplitude, ' + outtag)
         outname=outdir+'/'+outtag+'.png'
         print 'outname is',outname
         plt.savefig(outname)
@@ -95,6 +96,7 @@ if __name__=='__main__':
             plt.axis('auto')
             plt.axis('tight')
             plt.colorbar()
+            plt.title('Phase, ' + outtag)
             outname=outdir+'/'+outtag+'_phase.png'
             plt.savefig(outname)
 
@@ -103,6 +105,7 @@ if __name__=='__main__':
             plt.axis('auto')
             plt.axis('tight')
             plt.colorbar()
+            plt.title('Amplitude, ' + outtag)
             outname=outdir+'/'+outtag+'_amp.png'
             plt.savefig(outname)
             
@@ -120,6 +123,7 @@ if __name__=='__main__':
     plt.plot(time_sys_start)
     plt.plot(time_rtc_start)
     plt.xlabel('Time since '+repr(t0))
+    plt.title('Observing Time of Spectra')
     plt.savefig(outdir+'/start_times.png')
 
 
