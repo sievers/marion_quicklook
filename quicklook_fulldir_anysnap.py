@@ -138,6 +138,8 @@ if __name__=='__main__':
 
     if prizm:
         time_sys_start=prizmtools.read_field_many_fast(fnames,'time_start.raw')
+        if time_sys_start is None:
+            time_sys_start=prizmtools.read_field_many_fast(fnames,'time_sys_start.raw')
     else:
         time_sys_start=prizmtools.read_field_many_fast(fnames,'time_sys_start.raw')
         time_rtc_start=prizmtools.read_field_many_fast(fnames,'time_rtc_start.raw')
